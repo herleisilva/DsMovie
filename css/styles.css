@@ -2,12 +2,13 @@
 
 :root{
    --bg-gray: #ddd;
+   --text-gray: #4A4A4A;
    --color-primary: #4d41c0;
    --white: #fff; 
 }
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans'; sans-serif;
 
 }
 h1, h2, h3, h4, h5, h6{
@@ -15,7 +16,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 html, body{
-    background-color: var(--bg-gray)
+    background-color: var(--bg-gray);
 
 }
 
@@ -43,15 +44,58 @@ nav a {
     font-size: 12px;
     font-weight: 400;
 }
+
 a, a:hover {
     text-decoration: none;
     color: unset;
-
 }
+
 . DsMovie-contact-container{
     display: flex;
     align-items: center;
 }
 .DsMovie-contact-container img{
     margin-right: 10px;
+}
+
+#DsMovie-card-list{
+    padding: 40px 0;
+
+}
+
+.DsMovie-card{
+    width: 360px;
+    }  
+.DsMovie-card img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+
+}
+.DsMovie-card-description{
+    background-color: var(--white);
+    padding: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+.DsMovie-card-description h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+} 
+.DsMovie-btn, .DsMovie-btn:hover{
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+
+     
 }
