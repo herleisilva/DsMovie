@@ -26,20 +26,42 @@
   </header>
 
   <main>
-    <section id="DsMovie-form - section">
+    <section id="DsMovie-form-section">
 
       <div class="container DsMovie-form-container">
-
         <div>
           <div class="DsMovie-card">
             <img src="https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg"
               alt="The Witcher">
-            <div class="DsMovie-card-description">
+            <div class="DsMovie-form-description">
               <h3>The Witcher</h3>
-              <a class=" DsMovie-btn" href="index.html">Cancelar</a>
+              
+              <form>
+                <div class="form-group DsMovie-form-group">  
+                  <label for="email">Informe seu email</label>
+                  <input class="form-control" type="email" id="email">
 
-            </div>
+                </div>
+                <div class="form-group DsMovie-form-group">
+                  <label for="Score">Informe sua avaliação</label>
+                  <select class="form-control" name= "score" id="score">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option> 
+                    <option value="5">5</option>
+
+                  </select>             
+                </div>
+                <div class="DsMovie-form-btn-container">
+                  <button class=" DsMovie-btn"type="submit">Salvar</button>
+                  <a class=" DsMovie-btn" href="index.html">Cancelar</a>              
+                </div>
+              </form>
+              
           </div>
+        </div>
+
         </div>
 
       </div>
